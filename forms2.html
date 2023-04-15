@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Form Example</title>
+</head>
+<style>
+    body{
+    background-color:pink;
+    text-align: center;
+    }
+    form{
+        border: 2px dashed black;
+        text-align: center;
+    font-style:bold;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    }
+    fieldset{
+    border: 5px solid #cf0fff;
+    font-size: 25px;
+ font-style: italic;
+ font-family: Tahoma;
+}
+    </style>
+<body>
+	<h1>HTML Form Example</h1>
+	<form>
+        <h1> Form </h1>
+		<fieldset>
+          
+		<legend>Personal Information</legend>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<br>
+        <br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<br>
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone">
+		<br>
+		</fieldset>
+		<fieldset>
+		<legend>Gender</legend>
+		<input type="radio" id="male" name="gender" value="male" required>
+		<label for="male">Male</label>
+		<br>
+		<input type="radio" id="female" name="gender" value="female" required>
+		<label for="female">Female</label>
+		<br>
+		<input type="radio" id="other" name="gender" value="other" required>
+		<label for="other">Other</label>
+		</fieldset>
+		<fieldset>
+		<legend>Hobbies</legend>
+		<input type="checkbox" id="hobby1" name="hobbies" value="reading">
+		<label for="hobby1">Reading</label>
+		<br>
+		<input type="checkbox" id="hobby2" name="hobbies" value="music">
+		<label for="hobby2">Drawing</label>
+		<br>
+		<input type="checkbox" id="hobby3" name="hobbies" value="sports">
+		<label for="hobby3">Painting</label>
+		<br>
+		<input type="checkbox" id="hobby4" name="hobbies" value="Gaming">
+		<label for="hobby3">Playing Video games</label>
+		</fieldset>
+		<fieldset>
+		<legend>Favorite Color</legend>
+		<select id="color" name="color" required>
+		<option value="">Select a color</option>
+		<option value="red">purple</option>
+		<option value="blue">pink</option>
+		<option value="green">blue</option>
+		<option value="yellow">Yellow</option>
+		</select>
+		</fieldset>
+		<fieldset>
+		<legend>Country</legend>
+		<select id="country" name="country" required>
+		<option value="">Select a coutnry</option>
+		<option value="Fil">Philippines</option>
+		<option value="Usa">USA</option>
+		<option value="Can">Canada</option>
+		<option value="Swe">Sweden</option>
+		</select>
+		</fieldset>
+		<fieldset>
+		<legend>Comments</legend>
+		<textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+		</fieldset>
+			
+		
+	</form>
+</body>
+</html>
+	
